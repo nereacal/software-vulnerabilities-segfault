@@ -4,7 +4,7 @@ Software Vulnerabilities - Segmentation Fault
 ## What is
 Means that an access to a restricted area of memory has occurred. Each program uses a reserved part of the RAM memory, when tries to access to another part of the memory it is called segmentation fault.
 
-### Vulnerabilities will be programs written in C. First needed is a C compiler in any OS.
+#### Vulnerabilities will be programs written in C. First needed is a C compiler in any OS.
 ### Windows:
 MinGW can be downloaded from here https://sourceforge.net/projects/mingw/files/Installer/
 Once installed and given an example of program.c :
