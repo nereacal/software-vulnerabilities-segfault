@@ -1,10 +1,16 @@
 # software-vulnerabilities-segfault
-Software Vulnerabilities - Segmentation Fault
+Software Vulnerabilities - Segmentation Fault (in C)
 
 ## What is
 Means that an access to a restricted area of memory has occurred. Each program uses a reserved part of the RAM memory, when tries to access to another part of the memory it is called segmentation fault.
 
-#### Vulnerabilities will be programs written in C. First needed is a C compiler in any OS.
+## Some cases
+- Misuse of ```printf``` or ```scanf``` functions. They need a variable that has an specific quantity of reserved memory.
+- Use of ```scanf``` without ```&```. The & will point the memory direction of the variable where the data is going to be stored.
+- Buffer overflowing. It is important to declare the number of positions of an array to avoid overflowing to non declared positions.
+- Pointer failures. When a pointer has not been initialized correctly and do not point to a valid memory direction.
+
+Vulnerabilities will be programs written in C. First needed is a C compiler in any OS.
 ### Windows:
 MinGW can be downloaded from here https://sourceforge.net/projects/mingw/files/Installer/
 Once installed and given an example of program.c :
